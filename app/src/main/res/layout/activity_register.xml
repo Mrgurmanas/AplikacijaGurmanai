@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAccent"
+    tools:context="com.aplikacijagurmanai.aplikacijagurmanai.Register">
+
+
+    <Button
+        android:text="Login"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnLog"
+        android:layout_marginTop="202dp"
+        android:background="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnReg"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/btnLog"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Sign in"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/textViewSign"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_below="@+id/textViewOR"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="OR"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:textSize="40dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textViewOR"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/btnReg"
+        android:layout_centerHorizontal="true"
+        tools:textStyle="bold" />
+</RelativeLayout>
