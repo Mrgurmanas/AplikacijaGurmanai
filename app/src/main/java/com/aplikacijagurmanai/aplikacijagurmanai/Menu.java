@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class Menu extends AppCompatActivity {
 
     CardView Recipes,Challenges,Settings;
+    ImageButton imgProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,17 +24,29 @@ public class Menu extends AppCompatActivity {
         Challenges=(CardView)findViewById(R.id.Challenges);
         Settings=(CardView)findViewById(R.id.Settings);
 
+        imgProfile=(ImageButton)findViewById(R.id.imgProfile);
+
+        imgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Menu.this, ProfileScreen.class));
+
+            }
+        });
+
         Recipes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Menu.this, MainActivity.class));
-                finish();
+
                 Toast.makeText(getApplicationContext(),"Recipes",Toast.LENGTH_LONG).show();
             }
         });
         Challenges.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(Menu.this, Challenges.class));
+
                 Toast.makeText(getApplicationContext(),"Challenges",Toast.LENGTH_LONG).show();
             }
         });

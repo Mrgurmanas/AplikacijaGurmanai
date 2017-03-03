@@ -1,5 +1,6 @@
 package com.aplikacijagurmanai.aplikacijagurmanai;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -25,8 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         recyclerView =(RecyclerView)findViewById(R.id.recycler);
+        prg=(ProgressBar)findViewById(R.id.progressBar);
+        imageButton=(ImageButton)findViewById(R.id.imageButton);
+
         recyclerView.setHasFixedSize(true);
+
         GridLayoutManager gridLayoutManager =new GridLayoutManager(this, 1);
+
         recyclerView.setLayoutManager(gridLayoutManager);
 
         ArrayList<String> arrayList =new ArrayList<>();
@@ -35,16 +41,16 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("Recipe:3");
         arrayList.add("Recipe:4");
 
-
         recyclerView.setAdapter(new RecyclerAdapter(arrayList));
-        prg=(ProgressBar)findViewById(R.id.progressBar);
-        imageButton=(ImageButton)findViewById(R.id.imageButton);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 i+=10;
                 prg.setProgress(i);
+                if(i==100){
+                    startActivity(new Intent(MainActivity.this, Recipes.class));
+                }
             }
         });
     }

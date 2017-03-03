@@ -25,6 +25,21 @@
         <activity
             android:name=".Menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Recipes" />
-</application>
+        <activity
+            android:name=".Recipes"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".LoginScreen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ProfileScreen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Challenges"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ChallengeScreen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
 </manifest>

@@ -11,6 +11,27 @@
     android:background="@color/colorAccent"
     tools:context="com.aplikacijagurmanai.aplikacijagurmanai.Register">
 
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nick" />
+
+    <EditText
+    android:id="@+id/editText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/btnReg"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="89dp"
+    android:ems="10"
+    android:inputType="textPassword" />
 
     <Button
         android:text="Login"
@@ -33,16 +54,6 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Sign in"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:id="@+id/textViewSign"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_below="@+id/textViewOR"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:text="OR"
         android:layout_width="60dp"
         android:layout_height="50dp"
@@ -53,4 +64,14 @@
         android:layout_below="@+id/btnReg"
         android:layout_centerHorizontal="true"
         tools:textStyle="bold" />
+
+    <TextView
+        android:text="Sign in"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/textViewSign"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_below="@+id/textViewOR"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
