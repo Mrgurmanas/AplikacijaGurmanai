@@ -1,77 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     android:background="@color/colorAccent"
-    tools:context="com.aplikacijagurmanai.aplikacijagurmanai.Register">
+    tools:context="com.aplikacijagurmanai.aplikacijagurmanai.LoginScreen">
 
-    <EditText
-        android:id="@+id/editText2"
+    <TextView
+        android:id="@+id/textReg"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_marginBottom="21dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nick" />
-
-    <EditText
-    android:id="@+id/editText"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_above="@+id/btnReg"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="89dp"
-    android:ems="10"
-    android:inputType="textPassword" />
-
-    <Button
-        android:text="Login"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:id="@+id/btnLog"
-        android:layout_marginTop="202dp"
-        android:background="@android:color/background_light"
+        android:text="Registration"
+        android:textSize="24sp"
+        android:layout_marginTop="57dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="Register"
-        android:layout_width="270dp"
-        android:layout_height="60dp"
-        android:id="@+id/btnReg"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="11dp"
-        android:layout_below="@+id/btnLog"
+    <EditText
+        android:id="@+id/editRegNick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname"
+        android:maxLines="1"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textReg"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="OR"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:textSize="40dp"
-        android:layout_marginTop="12dp"
-        android:id="@+id/textViewOR"
-        android:textColor="@android:color/background_light"
-        android:layout_below="@+id/btnReg"
-        android:layout_centerHorizontal="true"
-        tools:textStyle="bold" />
+    <EditText
+        android:id="@+id/editRegPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/editRegNick"
+        android:layout_alignLeft="@+id/editRegNick"
+        android:layout_alignStart="@+id/editRegNick" />
 
-    <TextView
-        android:text="Sign in"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:id="@+id/textViewSign"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_below="@+id/textViewOR"
+    <EditText
+        android:id="@+id/editRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/editRegPass"
+        android:layout_alignLeft="@+id/editRegPass"
+        android:layout_alignStart="@+id/editRegPass" />
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Register"
+        android:layout_below="@+id/editRegEmail"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
