@@ -8,11 +8,14 @@
     card_view:cardCornerRadius="6dp"
     card_view:contentPadding="20dp"
     card_view:cardElevation="4dp"
-    android:layout_margin="4dp">
+    android:layout_margin="4dp"
+    android:clickable="true">
 
     <TextView
-        android:id="@+id/info_text"
+        android:id="@+id/recipe_name"
         android:text=""
+        android:textStyle="bold"
+        android:textColor="#424242"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

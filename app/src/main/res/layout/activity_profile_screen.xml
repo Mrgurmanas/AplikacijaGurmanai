@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
     tools:context="com.aplikacijagurmanai.aplikacijagurmanai.ProfileScreen">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/app_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="#424242"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp" />
@@ -21,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nickname"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
@@ -32,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Finished recipes:"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
@@ -44,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Uploaded photos:"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         android:layout_below="@+id/listView2"
         android:layout_alignParentLeft="true"
@@ -63,7 +62,7 @@
         android:layout_height="103dp"
         android:id="@+id/listView"
         android:layout_below="@+id/textView5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/listView2"
+        android:layout_alignEnd="@+id/listView2" />
 
 </RelativeLayout>

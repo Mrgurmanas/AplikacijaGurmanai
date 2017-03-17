@@ -14,4 +14,20 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string-array name="recipe_name">
+        <item>"Baked pasta"</item>
+        <item>"Baked egg"</item>
+        <item>"Baked rice"</item>
+        <item>"Fried potatoes"</item>
+    </string-array>
+
+    <string-array name="challenges_theme">
+        <item>"Omlet"</item>
+    </string-array>
+    
+    <array name="challenges_pictures">
+        <item>@drawable/app_icon</item>
+    </array>
+
 </resources>

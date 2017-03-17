@@ -4,29 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
     tools:context="com.aplikacijagurmanai.aplikacijagurmanai.ChallengeScreen">
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="productName"
-        android:textColor="@android:color/white"
+        android:text="Product"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="37dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView8"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:text="22:29"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/app_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp" />
+
+    <Button
+        android:id="@+id/tpc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take photo"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
