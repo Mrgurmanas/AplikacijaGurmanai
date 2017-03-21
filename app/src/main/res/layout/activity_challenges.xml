@@ -52,10 +52,10 @@
         android:id="@+id/numberPicker5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView7"
+        android:layout_alignBaseline="@+id/numberPicker4"
+        android:layout_alignBottom="@+id/numberPicker4"
         android:layout_alignRight="@+id/textView7"
-        android:layout_alignEnd="@+id/textView7"
-        android:layout_marginTop="23dp" />
+        android:layout_alignEnd="@+id/textView7" />
 
     <Button
         android:id="@+id/btnNext"

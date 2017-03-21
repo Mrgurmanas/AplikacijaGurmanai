@@ -30,19 +30,21 @@
 
     <ImageView
         android:id="@+id/pc"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/app_icon"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="130dp" />
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/tpc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
 
     <Button
         android:id="@+id/tpc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Take photo"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="42dp"
         android:layout_below="@+id/time"
         android:layout_centerHorizontal="true" />
 
