@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class Menu extends AppCompatActivity {
 
-    CardView Recipes,Challenges,Voting;
+    CardView Recipes,Challenges,Voting,Search;
     ImageButton imgProfile;
 
     @Override
@@ -23,6 +23,7 @@ public class Menu extends AppCompatActivity {
         Recipes=(CardView)findViewById(R.id.Recipes);
         Challenges=(CardView)findViewById(R.id.Challenges);
         Voting=(CardView)findViewById(R.id.Voting);
+        Search=(CardView)findViewById(R.id.Paieska);
 
         imgProfile=(ImageButton)findViewById(R.id.imgProfile);
 
@@ -54,6 +55,13 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Menu.this, Voting.class));
+                Toast.makeText(getApplicationContext(),"Voting",Toast.LENGTH_LONG).show();
+            }
+        });
+        Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Menu.this, Search.class));
                 Toast.makeText(getApplicationContext(),"COMING SOON",Toast.LENGTH_LONG).show();
             }
         });

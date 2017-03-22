@@ -25,7 +25,7 @@
     <string-array name="challenges_theme">
         <item>"Omlet"</item>
     </string-array>
-    
+
     <array name="challenges_pictures">
         <item>@drawable/app_icon</item>
     </array>
